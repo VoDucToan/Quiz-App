@@ -1,0 +1,70 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+body {
+    background-color: blue;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.container {
+    background-color: #fff;
+    width: 600px;
+    border-radius: 15px;
+    padding: 25px;
+}
+.container .header {
+    padding: 10px 0;
+    border-bottom: 1px solid black;
+    margin-bottom: 15px;
+}
+.container .header span {
+    font-size: 25px;
+    font-weight: 600;
+}
+.container .question h2 {
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 5px;
+}
+.container .question .answer {
+    display: block;
+    width: 100%;
+    background-color: #fff;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    border: 1px solid black;
+    text-align: left;
+    padding: 5px;
+    font-size: 15px;
+    color: black;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+.container .question .answer:hover:not([disabled]) {
+    background-color: black;
+    color: #fff;
+}
+.container .question #control {
+    background-color: blue;
+    color: #fff;
+    border-radius: 5px;
+    font-size: 15px;
+    padding: 5px;
+    cursor: pointer;
+    width: 130px;
+    margin: 0 auto;
+    display: block;
+}
+.correct {
+    background-color: #bceb74 !important;
+}
+.incorrect {
+    background-color: #f17878 !important;
+}
